@@ -46,6 +46,10 @@
         </div>
       </div>
     </div>
-    <script src="./js/app.js"></script>
+    <script>
+      const spanPrice = document.querySelector(".price");
+      const priceValue = spanPrice.innerText;
+      spanPrice.setAttribute("data-price", priceValue);
+    </script>
   </body>
 </html>
