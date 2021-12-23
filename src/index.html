@@ -12,6 +12,7 @@
   <body>
     <div class="main">
       <div class="card product">
+        <span class="subtitle is-6 price">$8,95</span>
         <div class="card-image">
           <figure class="image is-4by3">
             <img
@@ -21,6 +22,7 @@
           </figure>
         </div>
         <div class="card-content">
+          <span class="subtitle is-6 price">$8,95</span>
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
@@ -50,6 +52,7 @@
       const spanPrice = document.querySelector(".price");
       const priceValue = spanPrice.innerText;
       spanPrice.setAttribute("data-price", priceValue);
+      console.log(spanPrice);
     </script>
   </body>
 </html>
