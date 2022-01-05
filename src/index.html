@@ -47,9 +47,7 @@
       </div>
     </div>
     <script>
-      const spanPrice = document.querySelector(".price");
-      const priceValue = spanPrice.innerText;
-      spanPrice.setAttribute("data-price", priceValue);
+      Array.from(document.querySelectorAll(".price")).forEach("data-price");
     </script>
   </body>
 </html>
