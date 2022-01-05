@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
   products.forEach(function (product) {
     product.setAttribute(
       "data-price",
-      product.querySelector(".price").innerText
+      product.querySelectorAll(".price").innerText
     );
   });
 });
