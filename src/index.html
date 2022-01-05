@@ -12,7 +12,6 @@
   <body>
     <div class="main">
       <div class="card product">
-        <span class="subtitle is-6 price">$8,95</span>
         <div class="card-image">
           <figure class="image is-4by3">
             <img
@@ -22,7 +21,6 @@
           </figure>
         </div>
         <div class="card-content">
-          <span class="subtitle is-6 price">$8,95</span>
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
@@ -34,7 +32,7 @@
             </div>
             <div class="media-content">
               <p class="title is-4">Aged Cheddar</p>
-              <span class="subtitle is-6 price">$8,95</span>
+              <p class="subtitle is-6 price">$8,95</p>
             </div>
           </div>
 
@@ -48,14 +46,6 @@
         </div>
       </div>
     </div>
-    <script>
-      const products = Array.from(document.querySelectorAll(".product"));
-      products.forEach(function (product) {
-        product.setAttribute(
-          "data-price",
-          product.querySelector(".price").innerText
-        );
-      });
-    </script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
